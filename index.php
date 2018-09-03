@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <title> Patrick's CST 336 site </title>
+    </head>
+</html>
+
+
 <html><body>
 <?php
 // A simple web site in Cloud9 that runs through Apache
