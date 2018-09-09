@@ -16,5 +16,8 @@
 echo 'Patrick Breckinridges CST 336 site';
 
 ?>
+
+<a href="Labs/lab1/index.html">Lab1</a>
+
 </body>
 </html>
