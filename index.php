@@ -18,6 +18,10 @@ echo 'Patrick Breckinridges CST 336 site';
 ?>
 
 <a href="Labs/lab1/index.html">Lab1</a>
+<br>
+<a href="Labs/lab2/index.php">Lab2</a>
+<br>
+<a href= "hw/hw1/operating_systems.html">HW1</a>
 
 </body>
 </html>
