@@ -1,0 +1,67 @@
+body {
+    background-color:black;
+    color:gray;
+    text-align: center;
+
+}
+
+header, nav, footer {
+    text-align: center;
+}
+
+main {
+    text-align: left;
+}
+
+nav a {    /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 2em;
+    text-decoration: none;    /* removed underline */
+    color: white;           /* by default, links are blue */
+}
+
+nav a:hover {    
+    border-bottom:4px green solid;
+    font-size: 3em;
+    transition: .9s;    /* transition effect */
+    color:yellow;
+}
+
+#me, #welcomeText {
+    float:left;
+}
+
+footer {
+    clear: left;
+}
+
+table {
+    margin: 0px auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#table-header {
+    background-color: #808000;
+}
+
+.table-row {
+    background-color: #3CB371;
+}
+
+ul {
+    text-align: left;
+    padding-left: 200px;
+}
+
+.hobby {
+    color: yellow;
+}
