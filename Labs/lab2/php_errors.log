@@ -3,3 +3,4 @@
 [12-Sep-2018 21:44:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab2/review/randomColor.php:0
 [12-Sep-2018 21:44:41 UTC] PHP   2. rand() /home/ubuntu/workspace/cst336/Labs/lab2/review/randomColor.php:14
 [12-Sep-2018 21:50:27 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/Labs/lab2/review/randomColor.php on line 20
+[17-Sep-2018 20:41:40 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cst336/Labs/lab2/inc/functions.php on line 47

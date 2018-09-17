@@ -1,26 +1,22 @@
 <?php
 
-function displaysymbol($randomValue, $pos){
+function displaySymbol($randomValue, $pos){
                     
-$randomValue = rand(0,5);  //Generates a random number from 0 to 5
+$randomValue = rand(0,3);  //Generates a random number from 0 to 5
 // echo $randomValue;
             
     switch ($randomValue) {
-        case 0: $symbol = "bar";
+        case 0: $symbol = "seven";
                 break;
-        case 1: $symbol = "orange";
+        case 1: $symbol = "cherry";
                 break;
-        case 2: $symbol = "cherry";
+        case 2: $symbol = "lemon";
                 break;
-        case 3: $symbol = "grapes";
+        case 3: $symbol = "orange";
                 break;
-        case 4: $symbol = "lemon";
-                break;      
-        case 5: $symbol = "seven";
-                break;                            
     }
             
-echo "<img id='reel$pos' src='img/$symbol.png' alt='$symbol' title='".ucfirst($symbol)."'/>";
+echo "<img id='reel$pos' src='img/$symbol.png' alt='$symbol' title='". ucfirst($symbol) . "' width='70' >";
 
 }
 

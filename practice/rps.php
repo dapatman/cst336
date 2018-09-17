@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> RPS </title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .col {
+            text-align: center;
+            margin: 0 70px;
+        }
+
+        .matchWinner {
+            background-color: yellow;
+            margin: 0 70px;
+        }
+
+        #finalWinner {
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+        }
+        
+        hr {
+            width:33%;
+        }        
+    </style>
+</head>
+
+<body>
+
+    <h1> Rock, Paper, Scissors </h1>
+
+    <div class="row">
+        <div class="col">
+            <h2>Player 1</h2>
+        </div>
+        <div class="col">
+            <h2>Player 2</h2>
+        </div>
+    </div>
+    
+    
+    <?php 
+    
+    $wins = 0;
+    for($i = 0; $i < 3; $i ++)
+    {
+    $winner = rand(0,1);
+    $symbol = rand(0,1);
+    
+    if ($symbol == 0)
+    {
+        if ($winner == 0)
+        {
+            $wins++;
+            echo "    <div class='row'>
+        <div class='col, matchWinner'><img src='rps/rock.png' alt='rock' width='150'></div>
+        <div class='col'><img src='rps/scissors.png' alt='scissors' width='150'></div>
+    </div>";
+        }
+        else {
+            echo "<div class='row'>
+        <div class='col'><img src='rps/rock.png' alt='rock' width='150'></div>
+        <div class='col, matchWinner'><img src='rps/paper.png' alt='paper' width='150'></div>
+    </div>";
+        }
+    }
+    
+       if ($symbol == 1)
+    {
+        if ($winner == 0)
+        {
+            $wins++;
+            echo "    <div class='row'>
+        <div class='col, matchWinner'><img src='rps/paper.png' alt='paper' width='150'></div>
+        <div class='col'><img src='rps/rock.png' alt='rock' width='150'></div>
+    </div>";
+        }
+        else {
+            echo "<div class='row'>
+        <div class='col'><img src='rps/paper.png' alt='paper' width='150'></div>
+        <div class='col, matchWinner'><img src='rps/scissors.png' alt='scissors' width='150'></div>
+    </div>";
+        }
+    }
+    
+           if ($symbol == 2)
+    {
+        if ($winner == 0)
+        {
+            $wins++;
+            echo "    <div class='row'>
+        <div class='col, matchWinner'><img src='rps/scissors.png' alt='scissors' width='150'></div>
+        <div class='col'><img src='rps/paper.png' alt='paper' width='150'></div>
+    </div>";
+        }
+        else {
+            echo "<div class='row'>
+        <div class='col'><img src='rps/scissors.png' alt='scissors' width='150'></div>
+        <div class='col, matchWinner'><img src='rps/rock.png' alt='rock' width='150'></div>
+    </div>";
+        }
+    }
+    
+    }
+    
+    if ($wins >1)
+    {
+    echo "<div id='finalWinner'>
+
+        <h1>The winner is Player 1</h1>
+
+    </div>";
+        
+    }
+    else
+    {
+        echo "<div id='finalWinner'>
+
+        <h1>The winner is Player 2</h1>
+
+    </div>";
+    }
+    
+    ?>
+    
+    
+    
+<!--    <div class="row">
+        <div class='col'><img src='rps/scissors.png' alt='scissors' width='150'></div>
+        <div class='col, matchWinner'><img src='img/rock.png' alt='rock' width='150'></div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class='col'><img src='rps/rock.png' alt='rock' width='150'></div>
+        <div class='col, matchWinner'><img src='rps/paper.png' alt='paper' width='150'></div>
+    </div>
+    <hr>
+    
+    <div class="row">
+        <div class='col, matchWinner'><img src='rps/paper.png' alt='paper' width='150'></div>
+        <div class='col'><img src='rps/rock.png' alt='rock' width='150'></div>
+    </div>
+    <hr>
+
+    <div id="finalWinner">
+
+        <h1>The winner is Player 2</h1>
+
+    </div>
+    -->
+    Images source: https://www.kisspng.com/png-rockpaperscissors-game-money-4410819/
+</body>
+
+</html>
