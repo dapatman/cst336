@@ -2,7 +2,7 @@
 
 function displaySymbol($randomValue, $pos){
                     
-$randomValue = rand(0,3);  //Generates a random number from 0 to 5
+$randomValue = rand(0,3);  //Generates a random number from 0 to 3
 // echo $randomValue;
             
     switch ($randomValue) {
@@ -26,7 +26,7 @@ function displayPoints($randomValue1, $randomValue2, $randomValue3) {
     if ($randomValue1 == $randomValue2 && $randomValue2 == $randomValue3) {
         switch ($randomValue1) {
             case 0: $totalPoints = 1000;
-                echo "<h1>Jackot!</h1>";
+                echo "<h1>Jackpot!</h1>";
                     break;
             case 1: $totalPoints = 500;
                     break;
