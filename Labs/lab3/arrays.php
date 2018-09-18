@@ -23,7 +23,22 @@ function displayArray($my_symbols){
     
     echo "Random item: " . $symbols[ array_rand($symbols) ]; //displays random item
     
-    echo "<img src='../lab2/ " . $symbols[ array_rand($symbols) ] . ".png'>"; //displays random item
+    $indexes = array();
+    
+    for ($i = 0; $i < 3; $i++){
+        
+        $indexes[] = $symbols[ array_rand($symbols) ]; 
+    echo "<img src='../lab2/img" . $indexes[$i] . ".png'>"; //displays random item
+    }
+    
+    echo "<hr>";
+    print_r($indexes);
+    
+    if ($indexes[0] == $indexes[1] && $indexes[1] == $indexes[2]) {
+        
+        echo "Congrats!!!";
+        
+    }
 ?>
 
 <!DOCTYPE html>'
