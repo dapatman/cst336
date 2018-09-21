@@ -26,5 +26,14 @@ include 'inc/functions.php';
             </form>
         
         </div>
+        
+        <div>
+        <figure>
+                
+            <img src="../../img/buddy_verified.png" width="400" alt="Picture of Patrick Breckinridge" />
+                
+        </figure>
+            
+        </div>
     </body>
 </html>

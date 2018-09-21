@@ -58,3 +58,15 @@
 [17-Sep-2018 22:03:50 UTC] PHP Stack trace:
 [17-Sep-2018 22:03:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:0
 [17-Sep-2018 22:03:50 UTC] PHP   2. array_rand() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:26
+[19-Sep-2018 20:39:05 UTC] PHP Warning:  Missing argument 1 for displayArray(), called in /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php on line 23 and defined in /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php on line 3
+[19-Sep-2018 20:39:05 UTC] PHP Stack trace:
+[19-Sep-2018 20:39:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:0
+[19-Sep-2018 20:39:05 UTC] PHP   2. displayArray() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:23
+[19-Sep-2018 20:39:05 UTC] PHP Warning:  Missing argument 1 for displayArray(), called in /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php on line 27 and defined in /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php on line 3
+[19-Sep-2018 20:39:05 UTC] PHP Stack trace:
+[19-Sep-2018 20:39:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:0
+[19-Sep-2018 20:39:05 UTC] PHP   2. displayArray() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:27
+[19-Sep-2018 20:39:05 UTC] PHP Warning:  Missing argument 1 for displayArray(), called in /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php on line 30 and defined in /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php on line 3
+[19-Sep-2018 20:39:05 UTC] PHP Stack trace:
+[19-Sep-2018 20:39:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:0
+[19-Sep-2018 20:39:05 UTC] PHP   2. displayArray() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:30

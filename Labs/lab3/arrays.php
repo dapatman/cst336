@@ -12,6 +12,18 @@ function displayArray($my_symbols){
 
 }
 
+    $symbols = array("seven");
+    print_r($symbols); //displays array content
+
+    array_push($symbols, "orange", "grapes"); //adds element(s) to the end of the array
+    print_r($symbols); //displays array content
+    
+    $symbols[] = "cherry"; //adds element to the end of the array
+    //print_r($symbols);
+    displayArray();
+    
+    sort($symbols);
+
     displayArray();
     
     shuffle($symbols);

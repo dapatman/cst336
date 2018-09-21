@@ -3,7 +3,7 @@
 function displaySymbol($randomValue, $pos){
                     
 //$randomValue = rand(0,3);  //Generates a random number from 0 to 3
- echo $randomValue;
+//echo $randomValue;
             
     switch ($randomValue) {
         case 0: $symbol = "seven";
