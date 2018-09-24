@@ -17,14 +17,17 @@ echo 'Patrick Breckinridges CST 336 site';
 
 ?>
 
-<a href="Labs/lab1/index.html">Lab1</a>
+<a href = "Labs/lab1/index.html">Lab1</a>
 <br>
-<a href="Labs/lab2/index.php">Lab2</a>
+<a href = "Labs/lab2/index.php">Lab2</a>
 <br>
-<a href= "hw/hw1/operating_systems.html">HW1</a>
+<a href = "hw/hw1/operating_systems.html">HW1</a>
 <br>
-<a href= "Labs/lab3/arrays.php">Lab3</a>
+<a href = "Labs/lab3/arrays.php">Lab3</a>
 <br>
+<a href = "practice/p3/reviews.php">Practice 3</a>
+<br>
+<a href = "practice/p1.html">Practive 1</a>
 
 </body>
 </html>
