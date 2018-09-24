@@ -27,7 +27,7 @@ echo 'Patrick Breckinridges CST 336 site';
 <br>
 <a href = "practice/p3/reviews.php">Practice 3</a>
 <br>
-<a href = "practice/p1.html">Practive 1</a>
+<a href = "practice/p1.html">Practice 1</a>
 
 </body>
 </html>
