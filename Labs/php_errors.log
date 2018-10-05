@@ -70,3 +70,10 @@
 [19-Sep-2018 20:39:05 UTC] PHP Stack trace:
 [19-Sep-2018 20:39:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:0
 [19-Sep-2018 20:39:05 UTC] PHP   2. displayArray() /home/ubuntu/workspace/cst336/Labs/lab3/arrays.php:30
+[26-Sep-2018 22:15:16 UTC] PHP Fatal error:  Call to undefined function printr() in /home/ubuntu/workspace/cst336/Labs/lab4/index.php on line 3
+[26-Sep-2018 22:15:16 UTC] PHP Stack trace:
+[26-Sep-2018 22:15:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab4/index.php:0
+[03-Oct-2018 21:40:47 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/Labs/lab4/index.php on line 120
+[03-Oct-2018 21:40:47 UTC] PHP Stack trace:
+[03-Oct-2018 21:40:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab4/index.php:0
+[03-Oct-2018 21:40:47 UTC] PHP   2. array_rand() /home/ubuntu/workspace/cst336/Labs/lab4/index.php:120

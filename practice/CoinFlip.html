@@ -1,0 +1,32 @@
+<?php
+if ( !isset($_SESSION['heads']) ) {
+    $_SESSION['heads'] = 0;
+    $_SESSION['tails'] = 0;
+    $_SESSION['tossHistory'] = array();
+    }
+    if( rand(0,1) == 0 ) {
+
+    $_SESSION['heads']++;
+
+    } else {
+    
+    $_SESSION['tails'}++;
+    $_SESSION['tossHistory'][] = "T";
+    
+?>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Coin Flipping </title>
+    </head>
+    <body>
+        
+        <h2> Heads: <?= heads </h2>
+        
+        <h2> Tails: </h2>
+        
+        
+    </body>
+</html>

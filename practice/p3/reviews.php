@@ -55,6 +55,7 @@ function movieReviews($array) {
                 text-align:center;
             }
             #main {
+                
                 display:flex;
                 justify-content: center;
             }
