@@ -32,7 +32,6 @@ echo 'Patrick Breckinridges CST 336 site';
 <br>
 <a href = "practice/p1.html">Practice 1</a>
 <br>
-<a href = "SilverJack/index.php">SilverJack</a>
 
 </body>
 </html>
