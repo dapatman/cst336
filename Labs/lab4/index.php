@@ -3,11 +3,8 @@
 $backgroundImage = "img/sea.jpg";
 
 if (isset($_GET["keyword"])) {
-
     include "api/pixabayAPI.php";
-
     $keyword = $_GET["keyword"];
-    
     if (!empty($_GET['category'])) {
         $keyword = $_GET['category'];
     }
