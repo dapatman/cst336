@@ -138,4 +138,13 @@ function formIsValid() {
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
        
     </body>
+                <div>
+                <br>
+            <hr>
+            </font>
+            
+            <br>
+            <figure id="buddy">
+                <img src="../../img/buddy_verified.png" width="200" alt="CSUMB logo" />
+            </figure>
 </html>
