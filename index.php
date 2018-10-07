@@ -26,12 +26,15 @@ echo 'Patrick Breckinridges CST 336 site';
 <br>
 <a href = "Labs/lab4/index.php">Lab4</a>
 <br>
+<a href = "Labs/SilverJack/index.php">Practice 1</a>
+<br>
 <a href = "hw/hw1/operating_systems.html">HW1</a>
 <br>
 <a href = "practice/p3/reviews.php">Practice 3</a>
 <br>
 <a href = "practice/p1.html">Practice 1</a>
 <br>
+
 
 </body>
 </html>
