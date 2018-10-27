@@ -83,6 +83,7 @@ function filterProducts() {
 <html>
     <head>
         <title> Lab 6: Ottermart Product Search</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         
@@ -99,8 +100,8 @@ function filterProducts() {
                <?=displayCategories()?>
             </select>
             
-            Price: From: <input type="text" name="priceFrom"  /> 
-             To: <input type="text" name="priceTo"  />
+            Price: From: <input type="number" name="priceFrom"  /> 
+             To: <input type="number" name="priceTo"  />
             <br>
             Order By:
             Price <input type="radio" name="orderBy" value="productPrice">
@@ -113,8 +114,9 @@ function filterProducts() {
         
         <?= filterProducts() ?>
         
-    
-
-
+        <br>
+        <figure id="buddy">
+            <img src="../../img/buddy_verified.png" width="200" alt="CSUMB logo" />
+        </figure>
     </body>
 </html>
