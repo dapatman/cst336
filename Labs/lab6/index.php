@@ -3,6 +3,61 @@
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
 
+function displaySearchResults(){
+    global $conn;
+    
+    if (isset($_GET['searchForm'])) { //checks whether user has submitted the form
+    
+    echo "<h3>Products Found: </h3>";
+    
+    $namedParameters = array();
+    
+    $sql = "SELECT * FROM om_product WHERE 1";
+    
+    if (!empty($_GET['product'])) { //checks whether user has typed something in the "Product" text box
+        $sql .= " AND productName LIKE :productName";
+        $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
+    }
+    
+    if (!empty($_GET['category'])) { //checks whether user has typed somehting in the "Price From" text box
+        $sql .= " AND catId = :categoryId";
+        $namedParameters[":categoryId"] = $_GET['category'];
+    }
+    
+    if (!empty($_GET['priceFrom'])) { //checks whether user has typed something from "Price From" text box
+        $sql .= " AND price >= :priceFrom";
+        $namedParameters[":priceFrom"];
+    }
+    
+    if (!empty($_GET['priceTo'])) { //checks wheather user has typed something in the "price TO" text box
+        $sql .= " AND price <= :priceTo";
+        $namedParameters[":priceTo"] = $_GET['priceTo'];
+    }
+    
+    if (isset($_GET['orderBy'])) {
+        if ($_GET['orderBy'] == "price") {
+            $sql .= " ORDER BY price";
+        } else {
+            
+            $sql .= " ORDERED BY productName";
+        }
+    }
+    
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($namedParameters);
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+    foreach($records as $record) {
+        
+    echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]. "\"> History </a>";
+            
+    echo $record["productName"] . " " . $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
+        
+    }
+    
+}
+}
+
 function displayCategories() { 
     global $dbConn;
     
@@ -42,6 +97,20 @@ function filterProducts() {
         //This SQL prevents SQL INJECTION by using a named parameter
          $sql .=  " AND catId =  :category";
           $namedParameters[':category'] = $_GET['category'] ;
+    }
+    
+    if (!empty($_GET['priceFrom'])) {
+        $sql .= " AND price >= :priceFrom";
+        $namedParameters[":priceFrom"] = $_GET['priceFrom'];
+    }
+        
+    if (!empty($_GET['priceTo'])) {
+        $sql .= " AND price <= :priceTo";
+        $namedParameters[":priceTo"] = $_GET['priceTo'];
+    }
+    if (!empty($_GET['description'])) {
+        $sql .= " AND productDescription LIKE :productDescription";
+        $namedParameters[":productDescription"] = "%" . $_GET['description'] . "%";
     }
     
     //echo $sql;
@@ -93,7 +162,7 @@ function filterProducts() {
         <form>
             
             Product: <input type="text" name="productName" placeholder="Product keyword" /> <br />
-            
+            Description: <input type="text" name="description" id="description" />
             Category: 
             <select name="category">
                <option value=""> Select one </option>  
