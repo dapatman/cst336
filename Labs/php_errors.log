@@ -160,3 +160,13 @@ Stack trace:
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/Labs/lab7/loginProcess.php on line 13
 [27-Oct-2018 20:46:28 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/Labs/lab6/index.php on line 177
+[29-Oct-2018 21:17:02 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/Labs/lab7/admin.php on line 31
+[29-Oct-2018 21:17:02 UTC] PHP Stack trace:
+[29-Oct-2018 21:17:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab7/admin.php:0
+[29-Oct-2018 21:53:00 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/Labs/lab7/admin.php on line 31
+[29-Oct-2018 21:53:00 UTC] PHP Stack trace:
+[29-Oct-2018 21:53:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab7/admin.php:0
+[29-Oct-2018 22:35:12 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/Labs/lab7/inc/functions.php on line 36
+[29-Oct-2018 22:35:12 UTC] PHP Stack trace:
+[29-Oct-2018 22:35:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Labs/lab7/updateProduct.php:0
+[29-Oct-2018 22:35:12 UTC] PHP   2. getProductInfo() /home/ubuntu/workspace/cst336/Labs/lab7/updateProduct.php:10

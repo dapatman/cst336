@@ -30,3 +30,11 @@
 [24-Oct-2018 22:27:17 UTC] PHP Stack trace:
 [24-Oct-2018 22:27:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php:0
 [24-Oct-2018 22:27:17 UTC] PHP   2. mysqli_fetch_array() /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php:73
+[04-Nov-2018 02:16:57 UTC] PHP Warning:  mysqli_fetch_field() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php on line 66
+[04-Nov-2018 02:16:57 UTC] PHP Stack trace:
+[04-Nov-2018 02:16:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php:0
+[04-Nov-2018 02:16:57 UTC] PHP   2. mysqli_fetch_field() /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php:66
+[04-Nov-2018 02:16:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php on line 73
+[04-Nov-2018 02:16:57 UTC] PHP Stack trace:
+[04-Nov-2018 02:16:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php:0
+[04-Nov-2018 02:16:57 UTC] PHP   2. mysqli_fetch_array() /home/ubuntu/workspace/cst336/Midterm/Midterm_program2.php:73

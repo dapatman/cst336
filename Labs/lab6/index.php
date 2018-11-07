@@ -99,19 +99,15 @@ function filterProducts() {
           $namedParameters[':category'] = $_GET['category'] ;
     }
     
-    if (!empty($_GET['priceFrom'])) {
-        $sql .= " AND price >= :priceFrom";
-        $namedParameters[":priceFrom"] = $_GET['priceFrom'];
-    }
+            if (!empty($_GET['priceFrom'])) {
+            $sql .= " AND price >= :priceFrom";
+            $namedParameters[":priceFrom"] = $_GET['priceFrom'];
+        }
         
-    if (!empty($_GET['priceTo'])) {
-        $sql .= " AND price <= :priceTo";
-        $namedParameters[":priceTo"] = $_GET['priceTo'];
-    }
-    if (!empty($_GET['description'])) {
-        $sql .= " AND productDescription LIKE :productDescription";
-        $namedParameters[":productDescription"] = "%" . $_GET['description'] . "%";
-    }
+        if (!empty($_GET['priceTo'])) {
+            $sql .= " AND price <= :priceTo";
+            $namedParameters[":priceTo"] = $_GET['priceTo'];
+        }
     
     //echo $sql;
     
@@ -162,7 +158,7 @@ function filterProducts() {
         <form>
             
             Product: <input type="text" name="productName" placeholder="Product keyword" /> <br />
-            Description: <input type="text" name="description" id="description" />
+            
             Category: 
             <select name="category">
                <option value=""> Select one </option>  
